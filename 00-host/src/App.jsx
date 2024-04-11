@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import CharacteresPage from "./pages/CharacteresPage";
 import NotFound from "./pages/NotFound";
 
+//Module Rutter
 import NavbarComponent from "mfNavbar/NavbarComponent";
 import Container from 'react-bootstrap/Container';
 
@@ -20,7 +21,7 @@ const App = () => (
       <NavbarComponent />
     </Container>
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/Home" element={<HomePage />} />
       <Route path="/Characteres" element={<CharacteresPage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="*" element={<NotFound/>}/>
